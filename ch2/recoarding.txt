@@ -1,0 +1,64 @@
+Script started on Sat 21 Sep 2024 08:27:03 AM MDT
+osc@ubuntu:~/final-src-osc10e/ch2/mazeGame$ make
+make -C /lib/modules/4.4.0-210-generic/build M=/home/osc/final-src-osc10e/ch2/mazeGame modules
+make[1]: Entering directory '/usr/src/linux-headers-4.4.0-210-generic'
+  CC [M]  /home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.o
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:[m[K In function ‘[01m[KproduceBoarderNumber[m[K’:
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:63:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktemp[m[K’ [-Wunused-variable]
+  int lessThan100, x, y, temp;
+[01;32m[K                         ^[m[K
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:63:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [-Wunused-variable]
+  int lessThan100, x, y, temp;
+[01;32m[K                      ^[m[K
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:63:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KlessThan100[m[K’ [-Wunused-variable]
+  int lessThan100, x, y, temp;
+[01;32m[K      ^[m[K
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:[m[K In function ‘[01m[KinitMaze[m[K’:
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:77:5:[m[K [01;35m[Kwarning: [m[KISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     int y, x;
+[01;32m[K     ^[m[K
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:[m[K In function ‘[01m[KcreateMaze[m[K’:
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:131:5:[m[K [01;35m[Kwarning: [m[KISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     int startX = randNum % WIDTH;
+[01;32m[K     ^[m[K
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:159:9:[m[K [01;35m[Kwarning: [m[KISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+         int wallProcessed = 0;
+[01;32m[K         ^[m[K
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:206:2:[m[K [01;35m[Kwarning: [m[KISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  int tempX;
+[01;32m[K  ^[m[K
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:[m[K In function ‘[01m[KproduceMaze[m[K’:
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:275:5:[m[K [01;35m[Kwarning: [m[KISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     int offset = 0;
+[01;32m[K     ^[m[K
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:[m[K In function ‘[01m[KcreateMaze[m[K’:
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:230:1:[m[K [01;35m[Kwarning: [m[Kthe frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+[01;32m[K ^[m[K
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:[m[K In function ‘[01m[KproduceMaze[m[K’:
+[01m[K/home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.c:301:1:[m[K [01;35m[Kwarning: [m[Kthe frame size of 2384 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+[01;32m[K ^[m[K
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.mod.o
+  LD [M]  /home/osc/final-src-osc10e/ch2/mazeGame/mazeGame.ko
+make[1]: Leaving directory '/usr/src/linux-headers-4.4.0-210-generic'
+osc@ubuntu:~/final-src-osc10e/ch2/mazeGame$ sudo insmod mazeGame.ko
+[sudo] password for osc: 
+osc@ubuntu:~/final-src-osc10e/ch2/mazeGame$ python run.py
+Maze Game
+#########
+# # # # #
+# # # #  
+#       #
+# ### # #
+  # # # #
+### # # #
+#     # #
+#########
+
+osc@ubuntu:~/final-src-osc10e/ch2/mazeGame$ exit
+exit
+
+Script done on Sat 21 Sep 2024 08:28:28 AM MDT
