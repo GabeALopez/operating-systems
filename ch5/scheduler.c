@@ -184,73 +184,88 @@ void SJF(Process processArr[], int size){
 	
 }
 
-void roundRobin(Process processArr[], int size, int quantum) {
-	int time = 0;
-	int completed = 0;
-	int totalWaitingTime = 0;
-	int totalResponseTime = 0;
-	int completedInTenSecs = 0;
-	int waitingTime = 0;
-	int responseTime = 0;
-	
+void roundRobin2(Process processArr[], int size, int quant) {
+
 	//Initialize gantt chart
     	char gantt[size][100];  
     	for (int i = 0; i < size; i++) {
         	memset(gantt[i], '_', sizeof(gantt[i]));  
         	gantt[i][99] = '\0'; 
+		gantt[i][0] = ' ';
     	}
 
-	while(completed < size){
-		//Run through each process for remaining time and subtract process's remaining time when running
-		for(int i = 0; i < size; i++){
-			if(processArr[i].remainingTime > 0){
-				
-				//Is the process's first time executing?
-				if (!processArr[i].isFirstExecuted) {
-                    			processArr[i].firstExecutionTime = time;
-                    			processArr[i].isFirstExecuted = 1;
-                		}
+	int count = 0;
+	int sum;
+	int i;
+	int waitingTimeNums[size];
+	int responseTimeNums[size];
+	int remainingTime[size];
+	int responseTimeArr[size];
+	int manipSize = size;
+	int completedInTenSecs = 0; 
 
-				//Subtract quantum time when process runs
-				if(processArr[i].remainingTime > quantum){
-					time += quantum;
-					processArr[i].remainingTime -= quantum;
-					gantt[i][time] = '#';
-				} else{
-					time += processArr[i].remainingTime;
-					processArr[i].remainingTime = 0;
-					processArr[i].completionTime = time;
-					completed++;
-
-					waitingTime = processArr[i].completionTime - processArr[i].time;
-					totalWaitingTime += waitingTime;
-
-					responseTime = processArr[i].firstExecutionTime;
-					totalResponseTime += responseTime;
-
-					if(time <= 10){
-						completedInTenSecs++;
-					}
-				}
-			}
-		}
+	//Set up variables for each process
+	for(int i = 0; i < size; i++){
+		waitingTimeNums[i] = 0;
+		responseTimeNums[i] = 0;
+		remainingTime[i] = processArr[i].time;
 	}
-	
 
-	//Print gannt chart
+
+	//Run through each process for remaining time and subtract process's remaining time when running
+	for (sum = 0, i = 0; manipSize != 0;) {
+		//Is the process's first time executing?
+		if (!processArr[i].isFirstExecuted) {
+			processArr[i].firstExecutionTime = sum;
+			processArr[i].isFirstExecuted = 1;
+		}
+
+		//Subtract quantum time when process runs
+		if (remainingTime[i] <= quant && remainingTime[i] > 0)
+          	{
+             		sum = sum + remainingTime[i];
+             		remainingTime[i] = 0;
+             		count = 1;
+          	} else if (remainingTime[i] > 0) {
+             		remainingTime[i] = remainingTime[i] - quant;
+             		sum = sum + quant;
+			gantt[i][sum] = '#';
+          	}
+
+          	if (remainingTime[i] == 0 && count == 1) {
+		     manipSize--;
+		     waitingTimeNums[i] = waitingTimeNums[i] + sum - processArr[i].arrivalTime - processArr[i].time;
+		     count = 0;
+		     responseTimeArr[i] = sum - processArr[i].firstExecutionTime;
+
+		     if(sum <= 10){
+		     	completedInTenSecs++;
+		     }
+          	}
+
+          	if (i == size - 1) {
+             		i = 0;
+          	} else if (processArr[i + 1].arrivalTime <= sum) {
+             		i++;
+          	} else {
+             		i = 0;
+          	}
+       	}
+
     	for (int i = 0; i < size; i++) {
-        	printf("%-10s %s\n", processArr[i].name, gantt[i]);
+        	printf("%s	%s\n", processArr[i].name, gantt[i]);
     	}
-	
+
 	printf("\n");
 
 	//Calculate averages
-	double avgWaitingTime = (double)totalWaitingTime / size;
-	double avgResponseTime = (double)totalResponseTime / size;
+	double avgWaitTime = calculateAvg(waitingTimeNums, size);
+	double avgResponseTime = calculateAvg(responseTimeArr, size);
 
-	printf("Average Wait Time: %f\n", avgWaitingTime);
+	printf("Average Waiting Time: %f\n", avgWaitTime);
 	printf("Average Response Time: %f\n", avgResponseTime);
-	printf("Throughput Over Ten Seconds: %d\n", completedInTenSecs);
+	printf("Throughput in 10 secs: %d\n", completedInTenSecs);	
+
 }
 
 int main(){
@@ -283,7 +298,7 @@ int main(){
 	printf("\n");
 	SJF(processes, size);
 	printf("\n");
-	roundRobin(processes, size, 1);
+	roundRobin2(processes, size, 1);
 
 	return 0;
 }
