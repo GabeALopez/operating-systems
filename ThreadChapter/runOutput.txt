@@ -1,0 +1,478 @@
+RUN 1:
+
+Thread 5: Work decreased, current work = 9
+Thread 5 released semaphore 0
+Thread 5 released semaphore 1
+Thread 5: Work decreased, current work = 8
+Thread 5 released semaphore 1
+Thread 5 released semaphore 2
+Thread 4: Work decreased, current work = 9
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 4: Work decreased, current work = 8
+Thread 4 released semaphore 1
+Thread 3: Work decreased, current work = 9
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 3: Work decreased, current work = 8
+Thread 3 released semaphore 2
+Thread 2: Work decreased, current work = 9
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 2: Work decreased, current work = 8
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 2: Work decreased, current work = 7
+Thread 2 released semaphore 2
+Thread 1: Work decreased, current work = 9
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 5: Work decreased, current work = 7
+Thread 5 released semaphore 0
+Thread 4: Work decreased, current work = 7
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 3: Work decreased, current work = 7
+Thread 3 released semaphore 0
+Thread 3 released semaphore 2
+Thread 3: Work decreased, current work = 6
+Thread 2: Work decreased, current work = 6
+Thread 3 released semaphore 2
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 1: Work decreased, current work = 8
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 5: Work decreased, current work = 6
+Thread 5 released semaphore 0
+Thread 5 released semaphore 2
+Thread 1: Work decreased, current work = 7
+Thread 4: Work decreased, current work = 6
+Thread 4 released semaphore 0
+Thread 1 released semaphore 2
+Thread 3: Work decreased, current work = 5
+Thread 3 released semaphore 0
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 4: Work decreased, current work = 5
+Thread 4 released semaphore 1
+Thread 2: Work decreased, current work = 5
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 5: Work decreased, current work = 5
+Thread 5 released semaphore 0
+Thread 5 released semaphore 1
+Thread 2: Work decreased, current work = 4
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 1: Work decreased, current work = 6
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 5: Work decreased, current work = 4
+Thread 5 released semaphore 1
+Thread 3: Work decreased, current work = 4
+Thread 3 released semaphore 0
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 4: Work decreased, current work = 4
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 2: Work decreased, current work = 3
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 1: Work decreased, current work = 5
+Thread 1 released semaphore 0
+Thread 1 released semaphore 2
+Thread 5: Work decreased, current work = 3
+Thread 5 released semaphore 0
+Thread 5 released semaphore 1
+Thread 5 released semaphore 2
+Thread 3: Work decreased, current work = 3
+Thread 3 released semaphore 0
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 4: Work decreased, current work = 3
+Thread 4 released semaphore 0
+Thread 4 released semaphore 2
+Thread 3: Work decreased, current work = 2
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 2: Work decreased, current work = 2
+Thread 2 released semaphore 0
+Thread 2 released semaphore 2
+Thread 1: Work decreased, current work = 4
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 5: Work decreased, current work = 2
+Thread 5 released semaphore 0
+Thread 5 released semaphore 1
+Thread 5 released semaphore 2
+Thread 4: Work decreased, current work = 2
+Thread 4 released semaphore 0
+Thread 4 released semaphore 2
+Thread 1: Work decreased, current work = 3
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 3: Work decreased, current work = 1
+Thread 3 released semaphore 0
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 2: Work decreased, current work = 1
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 5: Work decreased, current work = 1
+Thread 5 released semaphore 0
+Thread 5 released semaphore 2
+Thread 4: Work decreased, current work = 1
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 1: Work decreased, current work = 2
+Thread 1 released semaphore 0
+Thread 1 released semaphore 2
+Thread 4: Work decreased, current work = 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 4 has finished all work.
+Thread 3: Work decreased, current work = 0
+Thread 3 released semaphore 0
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 3 has finished all work.
+Thread 1: Work decreased, current work = 1
+Thread 1 released semaphore 1
+Thread 2: Work decreased, current work = 0
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 2 has finished all work.
+Thread 5: Work decreased, current work = 0
+Thread 5 released semaphore 0
+Thread 5 released semaphore 1
+Thread 5 released semaphore 2
+Thread 5 has finished all work.
+Thread 1: Work decreased, current work = 0
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 1 has finished all work.
+
+RUN 2: 
+
+Thread 5: Work decreased, current work = 9
+Thread 5 released semaphore 0
+Thread 5 released semaphore 1
+Thread 5: Work decreased, current work = 8
+Thread 5 released semaphore 1
+Thread 5 released semaphore 2
+Thread 4: Work decreased, current work = 9
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 4: Work decreased, current work = 8
+Thread 4 released semaphore 1
+Thread 3: Work decreased, current work = 9
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 3: Work decreased, current work = 8
+Thread 3 released semaphore 2
+Thread 2: Work decreased, current work = 9
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 2: Work decreased, current work = 8
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 2: Work decreased, current work = 7
+Thread 2 released semaphore 2
+Thread 1: Work decreased, current work = 9
+Thread 5: Work decreased, current work = 7
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 1: Work decreased, current work = 8
+Thread 1 released semaphore 2
+Thread 5 released semaphore 0
+Thread 4: Work decreased, current work = 7
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 3: Work decreased, current work = 7
+Thread 3 released semaphore 0
+Thread 3 released semaphore 2
+Thread 4: Work decreased, current work = 6
+Thread 2: Work decreased, current work = 6
+Thread 4 released semaphore 2
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 1: Work decreased, current work = 7
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 2: Work decreased, current work = 5
+Thread 2 released semaphore 1
+Thread 5: Work decreased, current work = 6
+Thread 5 released semaphore 0
+Thread 5 released semaphore 1
+Thread 5 released semaphore 2
+Thread 2: Work decreased, current work = 4
+Thread 3: Work decreased, current work = 6
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 2: Work decreased, current work = 3
+Thread 3 released semaphore 0
+Thread 5: Work decreased, current work = 5
+Thread 2 released semaphore 1
+Thread 5 released semaphore 2
+Thread 4: Work decreased, current work = 5
+Thread 4 released semaphore 0
+Thread 4 released semaphore 2
+Thread 3: Work decreased, current work = 5
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 1: Work decreased, current work = 6
+Thread 5: Work decreased, current work = 4
+Thread 1 released semaphore 0
+Thread 1 released semaphore 2
+Thread 5 released semaphore 1
+Thread 2: Work decreased, current work = 2
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 5: Work decreased, current work = 3
+Thread 5 released semaphore 2
+Thread 1: Work decreased, current work = 5
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 2: Work decreased, current work = 1
+Thread 2 released semaphore 2
+Thread 4: Work decreased, current work = 4
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 5: Work decreased, current work = 2
+Thread 3: Work decreased, current work = 4
+Thread 5 released semaphore 1
+Thread 3 released semaphore 0
+Thread 3 released semaphore 2
+Thread 3: Work decreased, current work = 3
+Thread 1: Work decreased, current work = 4
+Thread 3 released semaphore 1
+Thread 1 released semaphore 0
+Thread 1 released semaphore 2
+Thread 2: Work decreased, current work = 0
+Thread 2 released semaphore 0
+Thread 2 released semaphore 2
+Thread 2 has finished all work.
+Thread 1: Work decreased, current work = 3
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 4: Work decreased, current work = 3
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 1: Work decreased, current work = 2
+Thread 1 released semaphore 1
+Thread 5: Work decreased, current work = 1
+Thread 5 released semaphore 0
+Thread 5 released semaphore 1
+Thread 5 released semaphore 2
+Thread 1: Work decreased, current work = 1
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 3: Work decreased, current work = 2
+Thread 3 released semaphore 0
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 4: Work decreased, current work = 2
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 5: Work decreased, current work = 0
+Thread 5 released semaphore 0
+Thread 5 released semaphore 2
+Thread 5 has finished all work.
+Thread 1: Work decreased, current work = 0
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 1 has finished all work.
+Thread 3: Work decreased, current work = 1
+Thread 3 released semaphore 0
+Thread 3 released semaphore 2
+Thread 4: Work decreased, current work = 1
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 3: Work decreased, current work = 0
+Thread 3 released semaphore 0
+Thread 3 has finished all work.
+Thread 4: Work decreased, current work = 0
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 4 has finished all work.
+
+RUN 3:
+
+Thread 5: Work decreased, current work = 9
+Thread 5 released semaphore 0
+Thread 5 released semaphore 1
+Thread 5: Work decreased, current work = 8
+Thread 5 released semaphore 1
+Thread 5 released semaphore 2
+Thread 4: Work decreased, current work = 9
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 4: Work decreased, current work = 8
+Thread 4 released semaphore 1
+Thread 3: Work decreased, current work = 9
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 2: Work decreased, current work = 9
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 3: Work decreased, current work = 8
+Thread 3 released semaphore 2
+Thread 1: Work decreased, current work = 9
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 3: Work decreased, current work = 7
+Thread 5: Work decreased, current work = 7
+Thread 5 released semaphore 0
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 1: Work decreased, current work = 8
+Thread 4: Work decreased, current work = 7
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4: Work decreased, current work = 6
+Thread 1 released semaphore 2
+Thread 4 released semaphore 1
+Thread 3: Work decreased, current work = 6
+Thread 3 released semaphore 2
+Thread 2: Work decreased, current work = 8
+Thread 2 released semaphore 0
+Thread 2 released semaphore 2
+Thread 3: Work decreased, current work = 5
+Thread 3 released semaphore 2
+Thread 5: Work decreased, current work = 6
+Thread 5 released semaphore 0
+Thread 5 released semaphore 2
+Thread 2: Work decreased, current work = 7
+Thread 1: Work decreased, current work = 7
+Thread 1 released semaphore 0
+Thread 4: Work decreased, current work = 5
+Thread 4 released semaphore 0
+Thread 3: Work decreased, current work = 4
+Thread 2 released semaphore 2
+Thread 4: Work decreased, current work = 4
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 2: Work decreased, current work = 6
+Thread 3 released semaphore 0
+Thread 2 released semaphore 2
+Thread 5: Work decreased, current work = 5
+Thread 5 released semaphore 0
+Thread 5 released semaphore 1
+Thread 5 released semaphore 2
+Thread 1: Work decreased, current work = 6
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 4: Work decreased, current work = 3
+Thread 4 released semaphore 0
+Thread 3: Work decreased, current work = 3
+Thread 3 released semaphore 0
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 4: Work decreased, current work = 2
+Thread 4 released semaphore 2
+Thread 2: Work decreased, current work = 5
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 5: Work decreased, current work = 4
+Thread 5 released semaphore 0
+Thread 5 released semaphore 2
+Thread 1: Work decreased, current work = 5
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 3: Work decreased, current work = 2
+Thread 3 released semaphore 0
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 4: Work decreased, current work = 1
+Thread 4 released semaphore 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 2: Work decreased, current work = 4
+Thread 2 released semaphore 0
+Thread 2 released semaphore 2
+Thread 4: Work decreased, current work = 0
+Thread 4 released semaphore 1
+Thread 4 released semaphore 2
+Thread 4 has finished all work.
+Thread 5: Work decreased, current work = 3
+Thread 5 released semaphore 0
+Thread 5 released semaphore 2
+Thread 1: Work decreased, current work = 4
+Thread 1 released semaphore 0
+Thread 1 released semaphore 1
+Thread 1 released semaphore 2
+Thread 5: Work decreased, current work = 2
+Thread 5 released semaphore 1
+Thread 5 released semaphore 2
+Thread 3: Work decreased, current work = 1
+Thread 3 released semaphore 0
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 2: Work decreased, current work = 3
+Thread 2 released semaphore 0
+Thread 2 released semaphore 2
+Thread 3: Work decreased, current work = 0
+Thread 3 released semaphore 1
+Thread 3 released semaphore 2
+Thread 3 has finished all work.
+Thread 1: Work decreased, current work = 3
+Thread 1 released semaphore 0
+Thread 1 released semaphore 2
+Thread 5: Work decreased, current work = 1
+Thread 5 released semaphore 0
+Thread 2: Work decreased, current work = 2
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 1: Work decreased, current work = 2
+Thread 1 released semaphore 0
+Thread 5: Work decreased, current work = 0
+Thread 5 released semaphore 0
+Thread 5 released semaphore 1
+Thread 5 released semaphore 2
+Thread 5 has finished all work.
+Thread 1: Work decreased, current work = 1
+Thread 1 released semaphore 2
+Thread 2: Work decreased, current work = 1
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 1: Work decreased, current work = 0
+Thread 1 released semaphore 1
+Thread 1 has finished all work.
+Thread 2: Work decreased, current work = 0
+Thread 2 released semaphore 0
+Thread 2 released semaphore 1
+Thread 2 released semaphore 2
+Thread 2 has finished all work.
